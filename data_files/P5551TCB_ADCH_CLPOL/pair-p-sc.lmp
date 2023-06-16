@@ -1,0 +1,347 @@
+pair_coeff    1    1 lj/cut/coul/long     0.200000     3.740000  # PT PT
+pair_coeff    1    2 lj/cut/coul/long     0.114890     3.618011  # PT C1
+pair_coeff    1    3 lj/cut/coul/long     0.114890     3.618011  # PT C2
+pair_coeff    1    4 lj/cut/coul/long     0.114890     3.618011  # PT C4
+pair_coeff    1    5 lj/cut/coul/long     0.114890     3.618011  # PT C5
+pair_coeff    1    6 lj/cut/coul/long     0.114890     3.618011  # PT CM
+pair_coeff    1    7 lj/cut/coul/long     0.077460     3.057777  # PT H1
+pair_coeff    1    8 lj/cut/coul/long     0.077460     3.057777  # PT H2
+pair_coeff    1    9 lj/cut/coul/long     0.077460     3.057777  # PT H4
+pair_coeff    1   10 lj/cut/coul/long     0.077460     3.057777  # PT H5
+pair_coeff    1   11 lj/cut/coul/long     0.077460     3.057777  # PT HM
+pair_coeff    1   12 lj/cut/coul/long     0.114890     3.618011  # PT C3
+pair_coeff    1   13 lj/cut/coul/long     0.077460     3.057777  # PT H3
+pair_coeff    1   14 lj/cut/coul/long     0.085555     3.659126  # PT B ~
+pair_coeff    1   15 lj/cut/coul/long     0.071308     3.513118  # PT CN ~
+pair_coeff    1   16 lj/cut/coul/long     0.114446     3.459480  # PT NC ~
+pair_coeff    2    2 lj/cut/coul/long     0.065999     3.500000  # C1 C1
+pair_coeff    2    3 lj/cut/coul/long     0.065999     3.500000  # C1 C2
+pair_coeff    2    4 lj/cut/coul/long     0.065999     3.500000  # C1 C4
+pair_coeff    2    5 lj/cut/coul/long     0.065999     3.500000  # C1 C5
+pair_coeff    2    6 lj/cut/coul/long     0.065999     3.500000  # C1 CM
+pair_coeff    2    7 lj/cut/coul/long     0.044497     2.958040  # C1 H1
+pair_coeff    2    8 lj/cut/coul/long     0.044497     2.958040  # C1 H2
+pair_coeff    2    9 lj/cut/coul/long     0.044497     2.958040  # C1 H4
+pair_coeff    2   10 lj/cut/coul/long     0.044497     2.958040  # C1 H5
+pair_coeff    2   11 lj/cut/coul/long     0.044497     2.958040  # C1 HM
+pair_coeff    2   12 lj/cut/coul/long     0.065999     3.500000  # C1 C3
+pair_coeff    2   13 lj/cut/coul/long     0.044497     2.958040  # C1 H3
+pair_coeff    2   14 lj/cut/coul/long     0.049148     3.539774  # C1 B ~
+pair_coeff    2   15 lj/cut/coul/long     0.040963     3.398529  # C1 CN ~
+pair_coeff    2   16 lj/cut/coul/long     0.065744     3.346640  # C1 NC ~
+pair_coeff    3    3 lj/cut/coul/long     0.065999     3.500000  # C2 C2
+pair_coeff    3    4 lj/cut/coul/long     0.065999     3.500000  # C2 C4
+pair_coeff    3    5 lj/cut/coul/long     0.065999     3.500000  # C2 C5
+pair_coeff    3    6 lj/cut/coul/long     0.065999     3.500000  # C2 CM
+pair_coeff    3    7 lj/cut/coul/long     0.044497     2.958040  # C2 H1
+pair_coeff    3    8 lj/cut/coul/long     0.044497     2.958040  # C2 H2
+pair_coeff    3    9 lj/cut/coul/long     0.044497     2.958040  # C2 H4
+pair_coeff    3   10 lj/cut/coul/long     0.044497     2.958040  # C2 H5
+pair_coeff    3   11 lj/cut/coul/long     0.044497     2.958040  # C2 HM
+pair_coeff    3   12 lj/cut/coul/long     0.065999     3.500000  # C2 C3
+pair_coeff    3   13 lj/cut/coul/long     0.044497     2.958040  # C2 H3
+pair_coeff    3   14 lj/cut/coul/long     0.049148     3.539774  # C2 B ~
+pair_coeff    3   15 lj/cut/coul/long     0.040963     3.398529  # C2 CN ~
+pair_coeff    3   16 lj/cut/coul/long     0.065744     3.346640  # C2 NC ~
+pair_coeff    4    4 lj/cut/coul/long     0.065999     3.500000  # C4 C4
+pair_coeff    4    5 lj/cut/coul/long     0.065999     3.500000  # C4 C5
+pair_coeff    4    6 lj/cut/coul/long     0.065999     3.500000  # C4 CM
+pair_coeff    4    7 lj/cut/coul/long     0.044497     2.958040  # C4 H1
+pair_coeff    4    8 lj/cut/coul/long     0.044497     2.958040  # C4 H2
+pair_coeff    4    9 lj/cut/coul/long     0.044497     2.958040  # C4 H4
+pair_coeff    4   10 lj/cut/coul/long     0.044497     2.958040  # C4 H5
+pair_coeff    4   11 lj/cut/coul/long     0.044497     2.958040  # C4 HM
+pair_coeff    4   12 lj/cut/coul/long     0.065999     3.500000  # C4 C3
+pair_coeff    4   13 lj/cut/coul/long     0.044497     2.958040  # C4 H3
+pair_coeff    4   14 lj/cut/coul/long     0.049148     3.539774  # C4 B ~
+pair_coeff    4   15 lj/cut/coul/long     0.040963     3.398529  # C4 CN ~
+pair_coeff    4   16 lj/cut/coul/long     0.065744     3.346640  # C4 NC ~
+pair_coeff    5    5 lj/cut/coul/long     0.065999     3.500000  # C5 C5
+pair_coeff    5    6 lj/cut/coul/long     0.065999     3.500000  # C5 CM
+pair_coeff    5    7 lj/cut/coul/long     0.044497     2.958040  # C5 H1
+pair_coeff    5    8 lj/cut/coul/long     0.044497     2.958040  # C5 H2
+pair_coeff    5    9 lj/cut/coul/long     0.044497     2.958040  # C5 H4
+pair_coeff    5   10 lj/cut/coul/long     0.044497     2.958040  # C5 H5
+pair_coeff    5   11 lj/cut/coul/long     0.044497     2.958040  # C5 HM
+pair_coeff    5   12 lj/cut/coul/long     0.065999     3.500000  # C5 C3
+pair_coeff    5   13 lj/cut/coul/long     0.044497     2.958040  # C5 H3
+pair_coeff    5   14 lj/cut/coul/long     0.049148     3.539774  # C5 B ~
+pair_coeff    5   15 lj/cut/coul/long     0.040963     3.398529  # C5 CN ~
+pair_coeff    5   16 lj/cut/coul/long     0.065744     3.346640  # C5 NC ~
+pair_coeff    6    6 lj/cut/coul/long     0.065999     3.500000  # CM CM
+pair_coeff    6    7 lj/cut/coul/long     0.044497     2.958040  # CM H1
+pair_coeff    6    8 lj/cut/coul/long     0.044497     2.958040  # CM H2
+pair_coeff    6    9 lj/cut/coul/long     0.044497     2.958040  # CM H4
+pair_coeff    6   10 lj/cut/coul/long     0.044497     2.958040  # CM H5
+pair_coeff    6   11 lj/cut/coul/long     0.044497     2.958040  # CM HM
+pair_coeff    6   12 lj/cut/coul/long     0.065999     3.500000  # CM C3
+pair_coeff    6   13 lj/cut/coul/long     0.044497     2.958040  # CM H3
+pair_coeff    6   14 lj/cut/coul/long     0.049148     3.539774  # CM B ~
+pair_coeff    6   15 lj/cut/coul/long     0.040963     3.398529  # CM CN ~
+pair_coeff    6   16 lj/cut/coul/long     0.065744     3.346640  # CM NC ~
+pair_coeff    7    7 lj/cut/coul/long     0.030000     2.500000  # H1 H1
+pair_coeff    7    8 lj/cut/coul/long     0.030000     2.500000  # H1 H2
+pair_coeff    7    9 lj/cut/coul/long     0.030000     2.500000  # H1 H4
+pair_coeff    7   10 lj/cut/coul/long     0.030000     2.500000  # H1 H5
+pair_coeff    7   11 lj/cut/coul/long     0.030000     2.500000  # H1 HM
+pair_coeff    7   12 lj/cut/coul/long     0.044497     2.958040  # H1 C3
+pair_coeff    7   13 lj/cut/coul/long     0.030000     2.500000  # H1 H3
+pair_coeff    7   14 lj/cut/coul/long     0.033136     2.991655  # H1 B ~
+pair_coeff    7   15 lj/cut/coul/long     0.027618     2.872281  # H1 CN ~
+pair_coeff    7   16 lj/cut/coul/long     0.044324     2.828427  # H1 NC ~
+pair_coeff    8    8 lj/cut/coul/long     0.030000     2.500000  # H2 H2
+pair_coeff    8    9 lj/cut/coul/long     0.030000     2.500000  # H2 H4
+pair_coeff    8   10 lj/cut/coul/long     0.030000     2.500000  # H2 H5
+pair_coeff    8   11 lj/cut/coul/long     0.030000     2.500000  # H2 HM
+pair_coeff    8   12 lj/cut/coul/long     0.044497     2.958040  # H2 C3
+pair_coeff    8   13 lj/cut/coul/long     0.030000     2.500000  # H2 H3
+pair_coeff    8   14 lj/cut/coul/long     0.033136     2.991655  # H2 B ~
+pair_coeff    8   15 lj/cut/coul/long     0.027618     2.872281  # H2 CN ~
+pair_coeff    8   16 lj/cut/coul/long     0.044324     2.828427  # H2 NC ~
+pair_coeff    9    9 lj/cut/coul/long     0.030000     2.500000  # H4 H4
+pair_coeff    9   10 lj/cut/coul/long     0.030000     2.500000  # H4 H5
+pair_coeff    9   11 lj/cut/coul/long     0.030000     2.500000  # H4 HM
+pair_coeff    9   12 lj/cut/coul/long     0.044497     2.958040  # H4 C3
+pair_coeff    9   13 lj/cut/coul/long     0.030000     2.500000  # H4 H3
+pair_coeff    9   14 lj/cut/coul/long     0.033136     2.991655  # H4 B ~
+pair_coeff    9   15 lj/cut/coul/long     0.027618     2.872281  # H4 CN ~
+pair_coeff    9   16 lj/cut/coul/long     0.044324     2.828427  # H4 NC ~
+pair_coeff   10   10 lj/cut/coul/long     0.030000     2.500000  # H5 H5
+pair_coeff   10   11 lj/cut/coul/long     0.030000     2.500000  # H5 HM
+pair_coeff   10   12 lj/cut/coul/long     0.044497     2.958040  # H5 C3
+pair_coeff   10   13 lj/cut/coul/long     0.030000     2.500000  # H5 H3
+pair_coeff   10   14 lj/cut/coul/long     0.033136     2.991655  # H5 B ~
+pair_coeff   10   15 lj/cut/coul/long     0.027618     2.872281  # H5 CN ~
+pair_coeff   10   16 lj/cut/coul/long     0.044324     2.828427  # H5 NC ~
+pair_coeff   11   11 lj/cut/coul/long     0.030000     2.500000  # HM HM
+pair_coeff   11   12 lj/cut/coul/long     0.044497     2.958040  # HM C3
+pair_coeff   11   13 lj/cut/coul/long     0.030000     2.500000  # HM H3
+pair_coeff   11   14 lj/cut/coul/long     0.033136     2.991655  # HM B ~
+pair_coeff   11   15 lj/cut/coul/long     0.027618     2.872281  # HM CN ~
+pair_coeff   11   16 lj/cut/coul/long     0.044324     2.828427  # HM NC ~
+pair_coeff   12   12 lj/cut/coul/long     0.065999     3.500000  # C3 C3
+pair_coeff   12   13 lj/cut/coul/long     0.044497     2.958040  # C3 H3
+pair_coeff   12   14 lj/cut/coul/long     0.049148     3.539774  # C3 B ~
+pair_coeff   12   15 lj/cut/coul/long     0.040963     3.398529  # C3 CN ~
+pair_coeff   12   16 lj/cut/coul/long     0.065744     3.346640  # C3 NC ~
+pair_coeff   13   13 lj/cut/coul/long     0.030000     2.500000  # H3 H3
+pair_coeff   13   14 lj/cut/coul/long     0.033136     2.991655  # H3 B ~
+pair_coeff   13   15 lj/cut/coul/long     0.027618     2.872281  # H3 CN ~
+pair_coeff   13   16 lj/cut/coul/long     0.044324     2.828427  # H3 NC ~
+pair_coeff   14   14 lj/cut/coul/long     0.095005     3.580000  # B B
+pair_coeff   14   15 lj/cut/coul/long     0.079185     3.437150  # B CN
+pair_coeff   14   16 lj/cut/coul/long     0.127086     3.384671  # B NC
+pair_coeff   15   15 lj/cut/coul/long     0.065999     3.300000  # CN CN
+pair_coeff   15   16 lj/cut/coul/long     0.105924     3.249615  # CN NC
+pair_coeff   16   16 lj/cut/coul/long     0.170000     3.200000  # NC NC
+pair_coeff    *  17* coul/long/cs
+pair_coeff    1    1 thole   1.237
+pair_coeff    1    2 thole   1.434
+pair_coeff    1    3 thole   1.434
+pair_coeff    1    4 thole   1.434
+pair_coeff    1    5 thole   1.567
+pair_coeff    1    6 thole   1.567
+pair_coeff    1   12 thole   1.434
+pair_coeff    1   14 thole   0.846
+pair_coeff    1   15 thole   1.401
+pair_coeff    1   16 thole   1.449
+pair_coeff    1   17 thole   1.237
+pair_coeff    1   18 thole   1.434
+pair_coeff    1   19 thole   1.434
+pair_coeff    1   20 thole   1.434
+pair_coeff    1   21 thole   1.567
+pair_coeff    1   22 thole   1.567
+pair_coeff    1   23 thole   1.434
+pair_coeff    1   24 thole   0.846
+pair_coeff    1   25 thole   1.401
+pair_coeff    1   26 thole   1.449
+pair_coeff    2    2 thole   1.662
+pair_coeff    2    3 thole   1.662
+pair_coeff    2    4 thole   1.662
+pair_coeff    2    5 thole   1.816
+pair_coeff    2    6 thole   1.816
+pair_coeff    2   12 thole   1.662
+pair_coeff    2   14 thole   0.980
+pair_coeff    2   15 thole   1.624
+pair_coeff    2   16 thole   1.680
+pair_coeff    2   17 thole   1.434
+pair_coeff    2   18 thole   1.662
+pair_coeff    2   19 thole   1.662
+pair_coeff    2   20 thole   1.662
+pair_coeff    2   21 thole   1.816
+pair_coeff    2   22 thole   1.816
+pair_coeff    2   23 thole   1.662
+pair_coeff    2   24 thole   0.980
+pair_coeff    2   25 thole   1.624
+pair_coeff    2   26 thole   1.680
+pair_coeff    3    3 thole   1.662
+pair_coeff    3    4 thole   1.662
+pair_coeff    3    5 thole   1.816
+pair_coeff    3    6 thole   1.816
+pair_coeff    3   12 thole   1.662
+pair_coeff    3   14 thole   0.980
+pair_coeff    3   15 thole   1.624
+pair_coeff    3   16 thole   1.680
+pair_coeff    3   17 thole   1.434
+pair_coeff    3   18 thole   1.662
+pair_coeff    3   19 thole   1.662
+pair_coeff    3   20 thole   1.662
+pair_coeff    3   21 thole   1.816
+pair_coeff    3   22 thole   1.816
+pair_coeff    3   23 thole   1.662
+pair_coeff    3   24 thole   0.980
+pair_coeff    3   25 thole   1.624
+pair_coeff    3   26 thole   1.680
+pair_coeff    4    4 thole   1.662
+pair_coeff    4    5 thole   1.816
+pair_coeff    4    6 thole   1.816
+pair_coeff    4   12 thole   1.662
+pair_coeff    4   14 thole   0.980
+pair_coeff    4   15 thole   1.624
+pair_coeff    4   16 thole   1.680
+pair_coeff    4   17 thole   1.434
+pair_coeff    4   18 thole   1.662
+pair_coeff    4   19 thole   1.662
+pair_coeff    4   20 thole   1.662
+pair_coeff    4   21 thole   1.816
+pair_coeff    4   22 thole   1.816
+pair_coeff    4   23 thole   1.662
+pair_coeff    4   24 thole   0.980
+pair_coeff    4   25 thole   1.624
+pair_coeff    4   26 thole   1.680
+pair_coeff    5    5 thole   1.985
+pair_coeff    5    6 thole   1.985
+pair_coeff    5   12 thole   1.816
+pair_coeff    5   14 thole   1.071
+pair_coeff    5   15 thole   1.775
+pair_coeff    5   16 thole   1.836
+pair_coeff    5   17 thole   1.567
+pair_coeff    5   18 thole   1.816
+pair_coeff    5   19 thole   1.816
+pair_coeff    5   20 thole   1.816
+pair_coeff    5   21 thole   1.985
+pair_coeff    5   22 thole   1.985
+pair_coeff    5   23 thole   1.816
+pair_coeff    5   24 thole   1.071
+pair_coeff    5   25 thole   1.775
+pair_coeff    5   26 thole   1.836
+pair_coeff    6    6 thole   1.985
+pair_coeff    6   12 thole   1.816
+pair_coeff    6   14 thole   1.071
+pair_coeff    6   15 thole   1.775
+pair_coeff    6   16 thole   1.836
+pair_coeff    6   17 thole   1.567
+pair_coeff    6   18 thole   1.816
+pair_coeff    6   19 thole   1.816
+pair_coeff    6   20 thole   1.816
+pair_coeff    6   21 thole   1.985
+pair_coeff    6   22 thole   1.985
+pair_coeff    6   23 thole   1.816
+pair_coeff    6   24 thole   1.071
+pair_coeff    6   25 thole   1.775
+pair_coeff    6   26 thole   1.836
+pair_coeff   12   12 thole   1.662
+pair_coeff   12   14 thole   0.980
+pair_coeff   12   15 thole   1.624
+pair_coeff   12   16 thole   1.680
+pair_coeff   12   17 thole   1.434
+pair_coeff   12   18 thole   1.662
+pair_coeff   12   19 thole   1.662
+pair_coeff   12   20 thole   1.662
+pair_coeff   12   21 thole   1.816
+pair_coeff   12   22 thole   1.816
+pair_coeff   12   23 thole   1.662
+pair_coeff   12   24 thole   0.980
+pair_coeff   12   25 thole   1.624
+pair_coeff   12   26 thole   1.680
+pair_coeff   14   14 thole   0.578
+pair_coeff   14   15 thole   0.958
+pair_coeff   14   16 thole   0.991
+pair_coeff   14   17 thole   0.846
+pair_coeff   14   18 thole   0.980
+pair_coeff   14   19 thole   0.980
+pair_coeff   14   20 thole   0.980
+pair_coeff   14   21 thole   1.071
+pair_coeff   14   22 thole   1.071
+pair_coeff   14   23 thole   0.980
+pair_coeff   14   24 thole   0.578
+pair_coeff   14   25 thole   0.958
+pair_coeff   14   26 thole   0.991
+pair_coeff   15   15 thole   1.587
+pair_coeff   15   16 thole   1.642
+pair_coeff   15   17 thole   1.401
+pair_coeff   15   18 thole   1.624
+pair_coeff   15   19 thole   1.624
+pair_coeff   15   20 thole   1.624
+pair_coeff   15   21 thole   1.775
+pair_coeff   15   22 thole   1.775
+pair_coeff   15   23 thole   1.624
+pair_coeff   15   24 thole   0.958
+pair_coeff   15   25 thole   1.587
+pair_coeff   15   26 thole   1.642
+pair_coeff   16   16 thole   1.698
+pair_coeff   16   17 thole   1.449
+pair_coeff   16   18 thole   1.680
+pair_coeff   16   19 thole   1.680
+pair_coeff   16   20 thole   1.680
+pair_coeff   16   21 thole   1.836
+pair_coeff   16   22 thole   1.836
+pair_coeff   16   23 thole   1.680
+pair_coeff   16   24 thole   0.991
+pair_coeff   16   25 thole   1.642
+pair_coeff   16   26 thole   1.698
+pair_coeff   17   17 thole   1.237
+pair_coeff   17   18 thole   1.434
+pair_coeff   17   19 thole   1.434
+pair_coeff   17   20 thole   1.434
+pair_coeff   17   21 thole   1.567
+pair_coeff   17   22 thole   1.567
+pair_coeff   17   23 thole   1.434
+pair_coeff   17   24 thole   0.846
+pair_coeff   17   25 thole   1.401
+pair_coeff   17   26 thole   1.449
+pair_coeff   18   18 thole   1.662
+pair_coeff   18   19 thole   1.662
+pair_coeff   18   20 thole   1.662
+pair_coeff   18   21 thole   1.816
+pair_coeff   18   22 thole   1.816
+pair_coeff   18   23 thole   1.662
+pair_coeff   18   24 thole   0.980
+pair_coeff   18   25 thole   1.624
+pair_coeff   18   26 thole   1.680
+pair_coeff   19   19 thole   1.662
+pair_coeff   19   20 thole   1.662
+pair_coeff   19   21 thole   1.816
+pair_coeff   19   22 thole   1.816
+pair_coeff   19   23 thole   1.662
+pair_coeff   19   24 thole   0.980
+pair_coeff   19   25 thole   1.624
+pair_coeff   19   26 thole   1.680
+pair_coeff   20   20 thole   1.662
+pair_coeff   20   21 thole   1.816
+pair_coeff   20   22 thole   1.816
+pair_coeff   20   23 thole   1.662
+pair_coeff   20   24 thole   0.980
+pair_coeff   20   25 thole   1.624
+pair_coeff   20   26 thole   1.680
+pair_coeff   21   21 thole   1.985
+pair_coeff   21   22 thole   1.985
+pair_coeff   21   23 thole   1.816
+pair_coeff   21   24 thole   1.071
+pair_coeff   21   25 thole   1.775
+pair_coeff   21   26 thole   1.836
+pair_coeff   22   22 thole   1.985
+pair_coeff   22   23 thole   1.816
+pair_coeff   22   24 thole   1.071
+pair_coeff   22   25 thole   1.775
+pair_coeff   22   26 thole   1.836
+pair_coeff   23   23 thole   1.662
+pair_coeff   23   24 thole   0.980
+pair_coeff   23   25 thole   1.624
+pair_coeff   23   26 thole   1.680
+pair_coeff   24   24 thole   0.578
+pair_coeff   24   25 thole   0.958
+pair_coeff   24   26 thole   0.991
+pair_coeff   25   25 thole   1.587
+pair_coeff   25   26 thole   1.642
+pair_coeff   26   26 thole   1.698
