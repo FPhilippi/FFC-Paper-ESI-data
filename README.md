@@ -27,3 +27,5 @@ MDresults: (time unit - where applicable - is femtoseconds)
 	  (the projections are given in an extra file - e.g. #1 is in x direction for the cations)
 	- radial distribution functions
 	- rotational autocorrelation functions, first and second Legendre polynomial, chargearm and P-CH3 vector.
+	
+	
