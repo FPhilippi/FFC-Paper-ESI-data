@@ -1,0 +1,74 @@
+# created by fftool
+
+units real
+boundary p p p
+
+atom_style full
+bond_style harmonic
+angle_style harmonic
+dihedral_style opls
+
+special_bonds lj/coul 0.0 0.0 0.5
+
+pair_style hybrid lj/cut/coul/long 12.0 12.0
+pair_modify mix geometric tail yes
+kspace_style pppm 1.0e-5
+
+read_data equilibrated400K.dat
+# read_restart restart1.lmp
+
+pair_coeff    1    1 lj/cut/coul/long     0.065999     3.500000  # CBT CBT
+pair_coeff    2    2 lj/cut/coul/long     0.061042     3.118000  # FBT FBT
+pair_coeff    3    3 lj/cut/coul/long     0.250000     3.550000  # SBT SBT
+pair_coeff    4    4 lj/cut/coul/long     0.170000     3.250000  # NBT NBT
+pair_coeff    5    5 lj/cut/coul/long     0.200134     3.150000  # OBT OBT
+pair_coeff    6    6 lj/cut/coul/long     0.200000     3.740000  # PT PT
+pair_coeff    7    7 lj/cut/coul/long     0.065999     3.500000  # C1 C1
+pair_coeff    8    8 lj/cut/coul/long     0.065999     3.500000  # C2 C2
+pair_coeff    9    9 lj/cut/coul/long     0.065999     3.500000  # CM CM
+pair_coeff   10   10 lj/cut/coul/long     0.030000     2.500000  # H1 H1
+pair_coeff   11   11 lj/cut/coul/long     0.030000     2.500000  # H2 H2
+pair_coeff   12   12 lj/cut/coul/long     0.030000     2.500000  # HM HM
+pair_coeff   13   13 lj/cut/coul/long     0.065999     3.500000  # C3 C3
+pair_coeff   14   14 lj/cut/coul/long     0.030000     2.500000  # H3 H3
+
+
+fix SHAKE all shake 0.0001 20 0 b 7
+
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes page 1000000 one 15000
+variable dt equal 1.0
+timestep ${dt}
+
+variable T equal 400.0
+
+
+
+
+fix MOMENTUM all momentum 1000 linear 1 1 1 angular rescale
+
+thermo_style custom step temp etotal press
+thermo 1000
+thermo_modify flush yes
+fix PRE all nvt temp $T $T 100
+run 200050
+unfix PRE
+
+reset_timestep 0
+restart 2000 restart1.lmp restart2.lmp
+variable time equal dt*step
+variable Temperatur equal temp
+fix SAVETEMP all print 1000 "${time} ${Temperatur}" append TemperatureNVE.dat screen no
+print "Time(fs) Temperature(K)" file TemperatureNVE.dat screen no
+
+fix NVE all nve
+
+	dump XYTRAJ all custom 1000 400K_1000fs_XYZ.lmp element xu yu zu
+	dump_modify XYTRAJ element C F S N O P C C C H H H C H sort id
+
+run 20000000
+
+write_data nve400K.dat
+
+quit
+	
