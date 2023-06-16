@@ -1,0 +1,75 @@
+# il.ff, version 2019/06/19
+# Molecular force field for ionic liquids
+# Agilio Padua, J.N. Canongia Lopes
+# contributors: K. Shimizu, A. Podgorsek, F. Hammami, L. Gontrani, M. Mishra,
+#               C. Bernardes, K. Goloviznina
+# questions to: agilio.padua@ens-lyon.fr
+#
+# units: kJ/mol, A, deg
+# bond and angle force constants are in the form k/2 (x - x0)^2
+# use 'cons' to indicate constrained bonds and angles
+# in improper dihedrals the central atom is the third in the list
+#
+# use with fftool to build input files for LAMMPS (or DLPOLY, GROMACS)
+
+ATOMS
+#     typ  m/u     q/e    pot   pars
+# JPCB 108 (2004) 2038 - only lennard jones, charges are own
+CM    CT  12.011  -0.343   lj    3.50   0.27614
+C1    CT  12.011  -0.226   lj    3.50   0.27614
+C2    CT  12.011  -0.147   lj    3.50   0.27614
+C3    CT  12.011  -0.143   lj    3.50   0.27614
+C4    CT  12.011  -0.144   lj    3.50   0.27614
+C5    CF  12.011  -0.243   lj    3.50   0.27614
+HM    HC   1.008   0.156   lj    2.50   0.12552
+H1    HC   1.008   0.134   lj    2.50   0.12552
+H2    HC   1.008   0.088   lj    2.50   0.12552
+H3    HC   1.008   0.086   lj    2.50   0.12552
+H4    HC   1.008   0.081   lj    2.50   0.12552
+H5    HC   1.008   0.093   lj    2.50   0.12552
+# JPCB 110 Issue 39 (2006) 19586-19592 - only lennard jones, charges are own
+PT     PT  30.974  0.413   lj    3.74   0.83680
+
+BONDS
+# i j    pot    re/A    kr/kJmol-1
+# alkanes OPLS-AA JACS 118(1996)11225, JPC 100 (1996) 18010
+HC  CT   cons   1.090   2845.0
+CT  CT   harm   1.529   2242.0
+HC  CF   cons   1.090   2845.0
+CT  CF   harm   1.529   2242.0
+# phosphonium: JPCB 110 Issue 39 (2006) 19586-19592 
+# no - I use my own fit here.
+PT  CT   harm   1.81    2040.0
+
+ANGLES
+# i j   k    pot    th/deg  ka/kjmol-1
+# alkyl and ethers OPLS-AA JACS 118 (1996) 11225, JPC 100 (1996) 18010
+CT  CT  CT   harm   112.7   488.3
+CT  CT  HC   harm   110.7   313.8 
+HC  CT  HC   harm   107.8   276.1
+CT  CT  CF   harm   112.7   488.3
+CF  CT  HC   harm   110.7   313.8
+CT  CF  HC   harm   110.7   313.8 
+HC  CF  HC   harm   107.8   276.1
+# phosphonium: JPCB 110 Issue 39 (2006) 19586-19592 
+PT  CT  CT   harm   115.2   509.0
+CT  PT  CT   harm   109.5   608.0
+HC  CT  PT   harm   110.1   390.0
+
+DIHEDRALS
+# i j   k   l    pot    v1        v2        v3        v4
+# alkanes and ethers OPLS-AA JACS 118 (1996) 11225; JPC 100 (1996) 18010
+HC  CT  CT  HC   opls   0.0000    0.0000    1.2552    0.0000
+CT  CT  CT  HC   opls   0.0000    0.0000    1.2552    0.0000
+CT  CT  CF  HC   opls   0.0000    0.0000    1.2552    0.0000
+HC  CT  CF  HC   opls   0.0000    0.0000    1.2552    0.0000
+CF  CT  CT  HC   opls   0.0000    0.0000    1.2552    0.0000
+# phosphonium: JPCB 110 Issue 39 (2006) 19586-19592 
+HC  CT  CT  PT   opls   0.0000    0.0000    0.465     0.0000
+HC  CT  PT  CT   opls   0.0000    0.0000    0.927     0.0000
+# own fit. start with CT-CT-CT-CF, work down to CPCC, and then back to CT-CT-CT-CF again.
+CT  PT  CT  CT  opls  0.96426   0.00000   1.32990   0.00000
+PT  CT  CT  CT  opls -48.46649  8.04010   3.00361   0.00000
+CT  CT  CT  CT  opls  5.42974   0.00000   3.63703   0.00000
+CT  CT  CT  CF  opls  5.56832   0.00000   3.76581   0.00000 
+

@@ -1,0 +1,80 @@
+# il.ff, version 2019/06/19
+# Molecular force field for ionic liquids
+# Agilio Padua, J.N. Canongia Lopes
+# contributors: K. Shimizu, A. Podgorsek, F. Hammami, L. Gontrani, M. Mishra,
+#               C. Bernardes, K. Goloviznina
+# questions to: agilio.padua@ens-lyon.fr
+#
+# units: kJ/mol, A, deg
+# bond and angle force constants are in the form k/2 (x - x0)^2
+# use 'cons' to indicate constrained bonds and angles
+# in improper dihedrals the central atom is the third in the list
+#
+# use with fftool to build input files for LAMMPS (or DLPOLY, GROMACS)
+
+ATOMS
+#     typ  m/u     q/e    pot   pars
+# JPCB 108 (2004) 2038 - only lennard jones, charges are own
+CT    CT  12.011  -0.235   lj    3.50   0.27614
+CM    CT  12.011  -0.243   lj    3.50   0.27614
+C1    CT  12.011  -0.241   lj    3.50   0.27614
+C2    CT  12.011  -0.014   lj    3.50   0.27614
+C4    CT  12.011  -0.033   lj    3.50   0.27614
+C5    CT  12.011  -0.021   lj    3.50   0.27614
+C7    CT  12.011  -0.020   lj    3.50   0.27614
+C8    CT  12.011  -0.252   lj    3.50   0.27614
+HT    HC   1.008   0.141   lj    2.50   0.12552
+HM    HC   1.008   0.116   lj    2.50   0.12552
+H1    HC   1.008   0.143   lj    2.50   0.12552
+H2    HC   1.008   0.085   lj    2.50   0.12552
+H4    HC   1.008   0.091   lj    2.50   0.12552
+H5    HC   1.008   0.084   lj    2.50   0.12552
+H7    HC   1.008   0.082   lj    2.50   0.12552
+H8    HC   1.008   0.096   lj    2.50   0.12552
+# JPCB 110 Issue 39 (2006) 19586-19592 - only lennard jones, charges are own
+PT     PT  30.974  0.407   lj    3.74  0.83680
+# 10.1021/ja9621760 - only lennard jones, charges are own
+#ethers OPLS-AA JACS 118 (1996) 11225; JPC 100 (1996) 18010
+O3    OY  15.999  -0.259   lj    2.900   0.58576
+O6    OY  15.999  -0.281   lj    2.900   0.58576
+
+BONDS
+# i j    pot    re/A    kr/kJmol-1
+# alkanes OPLS-AA JACS 118(1996)11225, JPC 100 (1996) 18010
+HC  CT   cons   1.090   2845.0
+CT  CT   harm   1.529   2242.0
+# phosphonium: JPCB 110 Issue 39 (2006) 19586-19592 
+# no - I use my own fit here.
+PT  CT   harm   1.81    2040.0
+# ethers OPLS-AA JACS 118 (1996) 11225; JPC 100 (1996) 18010
+CT  OY   harm   1.410   2677.8
+
+ANGLES
+# i j   k    pot    th/deg  ka/kjmol-1
+# alkyl and ethers OPLS-AA JACS 118 (1996) 11225, JPC 100 (1996) 18010
+CT  CT  CT   harm   112.7   488.3
+CT  CT  HC   harm   110.7   313.8 
+HC  CT  HC   harm   107.8   276.1
+CT  CT  OY   harm   109.5   418.4
+HC  CT  OY   harm   109.5   292.9
+CT  OY  CT   harm   109.5   502.1
+# phosphonium: JPCB 110 Issue 39 (2006) 19586-19592 
+PT  CT  CT   harm   115.2   509.0
+CT  PT  CT   harm   109.5   608.0
+HC  CT  PT   harm   110.1   390.0
+
+DIHEDRALS
+# i j   k   l    pot    v1        v2        v3        v4
+# alkanes and ethers OPLS-AA JACS 118 (1996) 11225; JPC 100 (1996) 18010
+HC  CT  CT  HC   opls   0.0000    0.0000    1.2552    0.0000
+CT  CT  CT  HC   opls   0.0000    0.0000    1.2552    0.0000
+CT  OY  CT  HC   opls   0.0000    0.0000    3.1798    0.0000
+HC  CT  CT  OY   opls   0.0000    0.0000    1.9581    0.0000
+# phosphonium: JPCB 110 Issue 39 (2006) 19586-19592 
+HC  CT  CT  PT   opls   0.0000    0.0000    0.465     0.0000
+HC  CT  PT  CT   opls   0.0000    0.0000    0.927     0.0000
+# just taken over directly from P2O231.ff
+CT  PT  CT  CT  opls  0.0000    0.0000    0.89956     0.0000
+PT  CT  CT  OY  opls -22.2698	2.7330	0.0000	0.0000
+CT  CT  OY  CT  opls  1.0844	-1.6076	4.3834	0.0000
+

@@ -1,0 +1,41 @@
+# anions.ff, version 2020/02/07
+# Molecular force field for ionic liquids
+# Agilio Padua, J.N. Canongia Lopes
+# contributors: K. Shimizu, A. Podgorsek, F. Hammami, L. Gontrani, M. Mishra,
+#               C. Bernardes, K.Goloviznina
+# questions to: agilio.padua@ens-lyon.fr
+#
+# units: kJ/mol, A, deg
+# bond and angle force constants are in the form k/2 (x - x0)^2
+# use 'cons' to indicate constrained bonds and angles
+# in improper dihedrals the central atom is the third in the list
+#
+# use with fftool to build input files for LAMMPS (or DLPOLY)
+
+ATOMS
+#     typ  m/u     q/e    pot   pars
+# bis(trifluoromethylsulfonyl) methanide (TFSM)
+# boron lennard jones from tetrafluoroborate anion, charges own fit
+# Carbon lennard jones from OPLS nitriles, charges own fit
+# nitrogen lennard jones from OPLS nitriles, charges own fit - ADCH
+B     B   10.811   0.252   lj    3.58   0.39750
+CN    CN  12.011   0.064   lj    3.30   0.27614
+NC    NC  14.000  -0.377   lj    3.20   0.71128
+
+BONDS
+# i j    pot    re/A    kr/kJmol-1
+# all fitted myself
+B   CN   harm   1.591   1922.4
+CN  NC   harm   1.175   9629.0
+
+ANGLES
+# i j   k    pot    th/deg  ka/kjmol-1
+# all fitted myself
+CN  B   CN   harm   109.7  488.0
+B   CN  NC   harm   180.0  188.3
+
+DIHEDRALS
+CN B CN NC   opls   0.0000    0.0000    0.0000    0.0000
+
+IMPROPER
+#none
